@@ -1,0 +1,5 @@
+name: "ArchLinux"
+description: "ArchLinux Github Action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
