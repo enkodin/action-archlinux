@@ -1,5 +1,5 @@
-name: "ArchLinux"
-description: "ArchLinux Github Action"
+name: "ArchLinux (makepkg --printsrc)"
+description: "ArchLinux (makepkg --printsrc)"
 runs:
   using: "docker"
   image: "Dockerfile"
