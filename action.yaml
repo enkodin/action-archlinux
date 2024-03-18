@@ -13,5 +13,4 @@ runs:
   using: "docker"
   image: "Dockerfile"
   args:
-    - ${{ inputs.cmd }}
-    - ${{ inputs.package }}
+    - ${{ inputs.cmd }} ${{ inputs.package }}
