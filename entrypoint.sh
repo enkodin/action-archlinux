@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd "${2}"
+cd "ddnsc"
 makepkg "${1}"
