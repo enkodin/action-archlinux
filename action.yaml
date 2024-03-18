@@ -5,8 +5,13 @@ inputs:
     description: "makepkg build arguments"
     required: true
     default: '--printsrc'
+  package:
+    description: "package directory"
+    required: true
+    default: '.'
 runs:
   using: "docker"
   image: "Dockerfile"
   args:
     - ${{ inputs.cmd }}
+    - ${{ inputs.package }}
