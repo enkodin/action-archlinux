@@ -1,5 +1,12 @@
-name: "ArchLinux (makepkg --printsrc)"
-description: "ArchLinux (makepkg --printsrc)"
+name: "ArchLinux (makepkg)"
+description: "ArchLinux (makepkg)"
+inputs:
+  cmd:
+    description: "makepkg build arguments"
+    required: true
+    default: '--printsrc'
 runs:
   using: "docker"
   image: "Dockerfile"
+  args:
+    - ${{ inputs.cmd }}
