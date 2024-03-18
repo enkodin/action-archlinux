@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-echo "${1}"
-ls -all
-pwd
+cd "${pwd}"/"${2}"
+makepkg "${1}"
