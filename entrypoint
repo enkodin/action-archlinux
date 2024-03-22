@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 echo ${INPUT_PKGBUILDS} | jq --raw-output '.[]' | while read pkg; do
+    chown -R user:user ${pkg:0:-9}
     cd ${pkg:0:-9}
     runuser -u user -- makepkg ${INPUT_CMD}
 done
