@@ -1,7 +1,7 @@
 FROM archlinux:latest
 
 # INSTALL DEPS
-RUN pacman --needed --noconfirm -Sy fakeroot jq
+RUN pacman --needed --noconfirm -Sy base-devel jq
 
 # USER (non-root)
 RUN useradd --create-home --no-log-init user
