@@ -6,5 +6,4 @@
 
 runuser -u user whoami
 
-echo ${INPUT_CMD}
-echo ${INPUT_PACKAGE}
+echo ${INPUT_PKGBUILDS} | jq

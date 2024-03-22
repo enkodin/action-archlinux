@@ -1,13 +1,16 @@
 name: "ArchLinux (makepkg)"
 description: "ArchLinux (makepkg)"
 author: shyaminayesh
+branding:
+  color: blue
+  icon: box
 inputs:
   cmd:
     description: "makepkg build arguments"
     required: true
     default: '--printsrc'
-  package:
-    description: "package name"
+  pkgbuilds:
+    description: "PKGBUILD files"
     required: false
 runs:
   using: "docker"
