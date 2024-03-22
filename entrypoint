@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-cd "ddnsc"
-makepkg "${1}"
+# makepkg "${1}"
 
 pwd
 
