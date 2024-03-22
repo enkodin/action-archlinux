@@ -11,8 +11,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # WORKDIR
-RUN mkdir -p /app && chown -R user:user /app
-WORKDIR /app
+RUN chown -R user:user /github/workspace
 USER user
 
 # ENTRY
