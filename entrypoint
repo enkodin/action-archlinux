@@ -2,6 +2,6 @@
 
 # makepkg "${1}"
 
-cat /etc/passwd
+runuser -u user whoami
 
 echo "test"
