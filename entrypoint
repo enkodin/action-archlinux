@@ -2,6 +2,6 @@
 
 # makepkg "${1}"
 
-pwd
+cat /etc/passwd
 
 echo "test"

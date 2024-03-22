@@ -10,9 +10,5 @@ RUN useradd --create-home --no-log-init user
 COPY entrypoint /usr/local/bin/entrypoint
 RUN chmod +x /usr/local/bin/entrypoint
 
-# PREP
-USER user
-WORKDIR /home/user
-
 # ENTRY
 ENTRYPOINT [ "/usr/local/bin/entrypoint" ]
