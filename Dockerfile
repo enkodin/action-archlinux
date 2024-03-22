@@ -10,8 +10,10 @@ RUN useradd --create-home --no-log-init user
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# GRANT PERMISSION
-RUN chown -R user:user /github/workspace
-
+# WORKDIR
+RUN mkdir -p /app && chown -R user:user /app
+WORKDIR /app
 USER user
+
+# ENTRY
 ENTRYPOINT [ "/entrypoint.sh" ]
