@@ -3,6 +3,7 @@
 ls /github -all
 
 whoami
+cat /etc/passwd
 su - user
 whoami
 pwd
