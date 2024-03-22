@@ -2,5 +2,5 @@
 
 echo ${INPUT_PKGBUILDS} | jq --raw-output '.[]' | while read pkg; do
     cd ${pkg:0:-9}
-    runuser -u user makepkg ${INPUT_CMD}
+    runuser -u user -- makepkg ${INPUT_CMD}
 done
