@@ -1,5 +1,6 @@
 name: "ArchLinux (makepkg)"
 description: "ArchLinux (makepkg)"
+author: shyaminayesh
 inputs:
   cmd:
     description: "makepkg build arguments"
