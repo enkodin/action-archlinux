@@ -11,7 +11,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # GRANT PERMISSION
-chown -R user:user /github/workspace
+RUN chown -R user:user /github/workspace
 
 USER user
 ENTRYPOINT [ "/entrypoint.sh" ]
