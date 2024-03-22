@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# makepkg "${1}"
-
-
-
-runuser -u user whoami
-
-echo ${INPUT_PKGBUILDS} | jq
+echo ${INPUT_PKGBUILDS} | jq --raw-output '.[]' | while read pkg; do
+    cd ${pkg:0:-9}
+    runuser -u user makepkg ${INPUT_CMD}
+done
