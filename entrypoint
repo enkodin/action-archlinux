@@ -2,6 +2,9 @@
 
 # makepkg "${1}"
 
+
+
 runuser -u user whoami
 
 echo ${INPUT_CMD}
+echo ${INPUT_PACKAGE}
